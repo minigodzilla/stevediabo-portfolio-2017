@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+html {
+}
+body {
+  background-color: #222;
+  color: #999;
+  font: 300 18px/1.5 'Varela Round', sans-serif;
+  overflow: hidden;
+  cursor: default;
+  transition: all .4s .3s ease-in;
+  user-select: none;
+}
+body,html{
+	min-height: 100vh;
+	overflow: hidden;
+}
+.touchable {
+  -webkit-tap-highlight-color: transparent;
+}
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+

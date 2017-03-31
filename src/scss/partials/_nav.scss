@@ -1,0 +1,69 @@
+nav {
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			@include position(absolute, 0px auto auto 0px);
+			transform: translate3d(0,0,0);
+			width: 100%;
+			height: 44px;
+			line-height: 44px;
+			background-color: $trans-black-normal;
+			color: $text-primary;
+
+			&:active {
+				background-color: $trans-black-darker;
+			}
+
+			&:nth-child(1) {
+				transform: translate3d(0,300px,0);
+			}
+			&:nth-child(2) {
+				transform: translate3d(0,346px,0);
+			}
+			&:nth-child(3) {
+				transform: translate3d(0,392px,0);
+			}
+			&:nth-child(4) {
+				transform: translate3d(0,438px,0);
+			}
+			&:nth-child(5) {
+				transform: translate3d(0,484px,0);
+			}
+			&:nth-child(6) {
+				transform: translate3d(0,530px,0);
+			}
+
+			.btn {
+				display: block;
+				@include position(absolute, 0px auto auto 0px);
+				width: 44px;
+				height: 44px;
+
+				&.btn-nav-action {
+					left: auto;
+					right: 0;
+				}
+
+				.glyph {
+					@include position(absolute, 0px auto auto 0px);
+					width: 100%;
+					height: 100%;
+					background-image: url('../img/arrow-fwd.svg');
+					background-position: 50% 50%;
+					background-size: cover;
+					opacity: 0.25;
+				}
+			}
+			.heading {
+				display: block;
+				@include position(absolute, 0px 52px auto 0px);
+				height: 44px;
+				padding: 0 12px;
+			}
+		}
+	}
+}

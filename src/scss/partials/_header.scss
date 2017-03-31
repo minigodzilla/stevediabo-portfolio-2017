@@ -1,0 +1,33 @@
+header {
+	z-index: 2;
+	opacity: 1;
+	@include position(absolute, 0px auto auto 0px);
+	width: 100%;
+	height: 100%;
+	background-image: url('../img/bg2.jpg');
+	background-position: 20% 50%;
+	background-size: cover;
+	transition: opacity 1500ms ease;
+
+	.nav-tapped & {
+		opacity: 0;
+	}
+
+	.header-locked & {
+		z-index: 1;
+	}
+
+	h1 {
+		@include position(absolute, 0px auto auto 0px);
+		margin: 0;
+		height: 52px;
+		background-image: url('../img/logo.svg');
+		background-position: 100% 0;
+		background-repeat: no-repeat;
+	}
+
+	h2 {
+		display: none;
+	}
+
+}
