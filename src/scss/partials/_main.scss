@@ -37,8 +37,7 @@ main {
 			line-height: 44px;
 			margin: 0;
 			font-weight: inherit;
-			font-size: inherit;
-			color: $text-primary;
+			font-size: 18px;
 			transition: transform 1500ms ease;
 
 			.btn {
@@ -126,15 +125,19 @@ main {
 					}
 				}
 
-				.slide-carousel {
+				.view-content {
 					opacity: 1;
 				}
 			}
 		}
-		.slide-carousel {
+		.view-content {
 			@include position(absolute, 44px auto 0px 0px);
 			width: 100vw;
-			//height: 100vh;
+			transition: opacity 1500ms ease;
+			opacity: 0;
+
+		}
+		.slide-carousel {
 			white-space: nowrap;
 			overflow-y: hidden;
 			overflow: auto;
@@ -150,8 +153,6 @@ main {
 			-ms-scroll-snap-points-x: repeat(100%);
 			scroll-snap-points-x: repeat(100%);
 			scroll-snap-align: start none;
-			transition: opacity 1500ms ease;
-			opacity: 0;
 
 			.slide {
 				width: 100%;
@@ -162,11 +163,52 @@ main {
 				overflow: hidden;
 				overflow-y: scroll;
 				-webkit-overflow-scrolling: touch;
+				padding: 20px;
+
+				.heading {
+					h5 {
+						margin: 0 0 2px 0;
+						line-height: 1;
+						font-size: 16px;
+						font-weight: inherit;
+						color: $text-secondary;
+					}
+					h4 {
+						margin: 0 0 8px 0;
+						line-height: 1;
+						font-size: 28px;
+						font-weight: inherit;
+					}
+				}
 
 				img {
 					display: block;
 					width: 85%;
 					margin: 0 auto;
+				}
+
+				h6 {
+					margin: 0;
+					font-size: inherit;
+					font-weight: inherit;
+					color: $text-secondary;
+				}
+
+				ul {
+					list-style-type: none;
+					margin: 0;
+					padding: 0;
+
+					li {
+						text-indent: -10px;
+						padding-left: 10px;
+						margin: 0 0 1em 0;
+
+						&:before {
+							content: "- ";
+							text-indent: -10px;
+						}
+					}
 				}
 			}
 		}

@@ -1,8 +1,8 @@
 /*!
- * fastshell
- * Fiercely quick and opinionated front-ends
- * https://HosseinKarami.github.io/fastshell
- * @author Hossein Karami
+ * stevediabo.com
+ * Personal Portfolio of Steve Diabo
+ * https://stevediabo.com
+ * @author Steve Diabo
  * @version 1.0.5
  * Copyright 2017. MIT licensed.
  */

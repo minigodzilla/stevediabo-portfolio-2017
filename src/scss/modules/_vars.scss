@@ -6,8 +6,15 @@ $back: darken(#F7F6F0, 40%);
 $trans-black-normal: rgba(0,0,0,0.5);
 $trans-black-darker: rgba(0,0,0,0.75);
 
+$black: rgba(0,0,0,1);
+
+$trans-white-normal: rgba(255,255,255,0.75);
+$trans-white-darker: rgba(255,255,255,0.5);
+
 $white: rgba(255,255,255,1);
 
 // pointing semantic vars to swatch vars
 
-$text-primary: $white;
+$text-primary: $trans-white-normal;
+
+$text-secondary: $trans-white-darker;
