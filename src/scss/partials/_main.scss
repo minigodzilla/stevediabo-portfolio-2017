@@ -49,6 +49,7 @@ main {
 				overflow: hidden;
 				transform: translate3d(-46px,0,0);
 				transition: transform 500ms ease;
+				cursor: pointer;
 
 				.glyph {
 					@include position(absolute, 0px auto auto 0px);

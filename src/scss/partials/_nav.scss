@@ -14,6 +14,7 @@ nav {
 			line-height: 44px;
 			background-color: $trans-black-normal;
 			color: $text-primary;
+			cursor: pointer;
 
 			&:active {
 				background-color: $trans-black-darker;

@@ -459,7 +459,8 @@ nav {
       height: 44px;
       line-height: 44px;
       background-color: rgba(0, 0, 0, 0.5);
-      color: rgba(255, 255, 255, 0.75); }
+      color: rgba(255, 255, 255, 0.75);
+      cursor: pointer; }
       nav ul li:active {
         background-color: rgba(0, 0, 0, 0.75); }
       nav ul li:nth-child(1) {
@@ -588,7 +589,8 @@ main {
                 transform: translate3d(-46px, 0, 0);
         transition: -webkit-transform 500ms ease;
         transition: transform 500ms ease;
-        transition: transform 500ms ease, -webkit-transform 500ms ease; }
+        transition: transform 500ms ease, -webkit-transform 500ms ease;
+        cursor: pointer; }
         main .view h3 .btn .glyph {
           position: absolute;
           top: 0px;
