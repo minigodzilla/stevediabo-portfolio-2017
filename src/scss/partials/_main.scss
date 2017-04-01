@@ -38,7 +38,7 @@ main {
 			margin: 0;
 			font-weight: inherit;
 			font-size: 18px;
-			transition: transform 1500ms ease;
+			transition: transform 500ms ease;
 
 			.btn {
 				display: block;
@@ -48,7 +48,7 @@ main {
 				background-color: $trans-black-normal;
 				overflow: hidden;
 				transform: translate3d(-46px,0,0);
-				transition: transform 1500ms ease;
+				transition: transform 500ms ease;
 
 				.glyph {
 					@include position(absolute, 0px auto auto 0px);
@@ -59,7 +59,7 @@ main {
 					background-size: cover;
 					opacity: 0;
 					transform: translate3d(46px,0,0);
-					transition: transform 1500ms ease, opacity 900ms ease;
+					transition: transform 500ms ease, opacity 300ms ease;
 				}
 			}
 
@@ -70,7 +70,7 @@ main {
 				background-color: $trans-black-normal;
 				padding: 0 12px;
 				transform: translate3d(0,0,0);
-				transition: transform 1500ms ease;
+				transition: transform 500ms ease;
 			}
 		}
 
@@ -133,7 +133,7 @@ main {
 		.view-content {
 			@include position(absolute, 44px auto 0px 0px);
 			width: 100vw;
-			transition: opacity 1500ms ease;
+			transition: opacity 500ms ease;
 			opacity: 0;
 
 		}
@@ -163,9 +163,11 @@ main {
 				overflow: hidden;
 				overflow-y: scroll;
 				-webkit-overflow-scrolling: touch;
-				padding: 20px;
+				//padding: 20px;
 
 				.heading {
+					padding: 20px 20px 0 20px;
+
 					h5 {
 						margin: 0 0 2px 0;
 						line-height: 1;
@@ -183,7 +185,7 @@ main {
 
 				img {
 					display: block;
-					width: 85%;
+					width: 90%;
 					margin: 0 auto;
 				}
 
@@ -194,19 +196,23 @@ main {
 					color: $text-secondary;
 				}
 
-				ul {
-					list-style-type: none;
-					margin: 0;
-					padding: 0;
+				.body {
+					padding: 0px 20px 20px 20px;
 
-					li {
-						text-indent: -10px;
-						padding-left: 10px;
-						margin: 0 0 1em 0;
+					ul {
+						list-style-type: none;
+						margin: 0;
+						padding: 0;
 
-						&:before {
-							content: "- ";
+						li {
 							text-indent: -10px;
+							padding-left: 10px;
+							margin: 0 0 1em 0;
+
+							&:before {
+								content: "- ";
+								text-indent: -10px;
+							}
 						}
 					}
 				}

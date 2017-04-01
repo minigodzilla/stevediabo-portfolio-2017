@@ -32,11 +32,11 @@
 		setTimeout(function() {
 			$('body').addClass('header-locked');
 			$('*[data-view-name=' + href + ']').addClass('locked');
-		},1500);
+		},500);
 
 		setTimeout(function() {
 			$('*[data-view-name=' + href + ']').addClass('back-btn-deployed');
-		},3000);
+		},1000);
 
 	});
 	
@@ -51,15 +51,15 @@
 		setTimeout(function() {
 			$('*[data-view-name=' + href + ']').removeClass('locked');
 			$('body').removeClass('header-locked');
-		},1500);
+		},500);
 
 		setTimeout(function() {
 			$('body').removeClass('nav-tapped');
-		},3000);
+		},1000);
 
 		setTimeout(function() {
 			$('*[data-view-name=' + href + ']').removeClass('shown');
-		},4500);
+		},1500);
 
 	});
 	
