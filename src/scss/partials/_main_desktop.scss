@@ -1,0 +1,78 @@
+main {
+	.background {
+		background-position: 50% 50%;
+		filter: blur(16px);
+	}
+
+	.view {
+
+		h3 {
+			@include position(absolute, 0 50% 0 auto);
+			width: 320px;
+			overflow: hidden;
+			transition: all 500ms ease;
+		}
+
+		&.view-1 h3 {
+			transform: translate3d(0,260px,0);
+		}
+
+		&.view-2 h3 {
+			transform: translate3d(0,306px,0);
+		}
+
+		&.view-3 h3 {
+			transform: translate3d(0,352px,0);
+		}
+
+		&.view-4 h3 {
+			transform: translate3d(0,398px,0);
+		}
+
+		&.view-5 h3 {
+			transform: translate3d(0,444px,0);
+		}
+
+		&.view-6 h3 {
+			transform: translate3d(0,490px,0);
+		}
+
+		&.shown {
+
+			&.locked {
+
+				h3 {
+					width: 100%;
+					right: 0;
+				}
+			}
+		}
+		.slide-carousel {
+
+			.slide {
+				width: 40%;
+				margin-right: 5%;
+
+				.slide-container {
+					//width: 960px;
+					//margin: 0 auto;
+				}
+
+				.heading {
+					//float: left;
+					//width: 40%;
+				}
+
+				img {
+					//float: right;
+					//width: 60%;
+				}
+
+				.body {
+					//clear: left;
+					//width: 40%;
+				}
+			}
+		}
+	}
+}
