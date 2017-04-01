@@ -480,6 +480,8 @@ nav {
       nav ul li:nth-child(6) {
         -webkit-transform: translate3d(0, 530px, 0);
                 transform: translate3d(0, 530px, 0); }
+      nav ul li a {
+        color: inherit; }
       nav ul li .btn {
         display: block;
         position: absolute;
@@ -500,10 +502,15 @@ nav {
           left: 0px;
           width: 100%;
           height: 100%;
-          background-image: url("../img/arrow-fwd.svg");
           background-position: 50% 50%;
           background-size: cover;
           opacity: 1; }
+          nav ul li .btn .glyph.glyph-fwd-arrow {
+            background-image: url("../img/arrow-fwd.svg"); }
+          nav ul li .btn .glyph.glyph-download {
+            background-image: url("../img/download.svg"); }
+          nav ul li .btn .glyph.glyph-ext-link {
+            background-image: url("../img/ext-link.svg"); }
       nav ul li .heading {
         display: block;
         position: absolute;

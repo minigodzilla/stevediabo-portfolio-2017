@@ -47,7 +47,7 @@ a.fn.owlCarousel.Constructor.Plugins.Animate=e}(window.Zepto||window.jQuery,wind
 
 	// nav buttons
 
-	$('nav ul li').on('mouseup touchend', function() {
+	$('nav ul li.nav-link').on('mouseup touchend', function() {
 
 		var href = $(this).attr('data-href');
 
