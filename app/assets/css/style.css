@@ -1157,8 +1157,13 @@ main {
 .scrollbar-inner > .scroll-element .scroll-element_outer {
   overflow: hidden; }
 
+.scrollbar-inner > .scroll-element .scroll-bar {
+  background-color: rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  transition: opacity 200ms ease; }
+
 .scrollbar-inner:hover > .scroll-element .scroll-bar {
-  background-color: rgba(0, 0, 0, 0.25); }
+  opacity: 1; }
 
 .scrollbar-inner > .scroll-element.scroll-draggable .scroll-bar {
   background-color: rgba(0, 0, 0, 0.5); }

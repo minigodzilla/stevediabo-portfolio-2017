@@ -132,10 +132,20 @@
 .scrollbar-inner > .scroll-element .scroll-bar {
 }
 
-.scrollbar-inner > .scroll-element .scroll-element_track {  }
-.scrollbar-inner > .scroll-element .scroll-bar { ; }
-.scrollbar-inner:hover > .scroll-element .scroll-bar { background-color: $trans-black-lighter; }
-.scrollbar-inner > .scroll-element.scroll-draggable .scroll-bar { background-color: $trans-black-normal; }
+.scrollbar-inner > .scroll-element .scroll-element_track {
+    
+}
+.scrollbar-inner > .scroll-element .scroll-bar {
+    background-color: $trans-black-lighter;
+    opacity: 0;
+    transition: opacity 200ms ease;
+}
+.scrollbar-inner:hover > .scroll-element .scroll-bar { 
+    opacity: 1;
+}
+.scrollbar-inner > .scroll-element.scroll-draggable .scroll-bar {
+    background-color: $trans-black-normal;
+}
 
 
 /* update scrollbar offset if both scrolls are visible */
