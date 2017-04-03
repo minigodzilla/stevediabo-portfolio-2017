@@ -39,7 +39,14 @@ a.fn.owlCarousel.Constructor.Plugins.Animate=e}(window.Zepto||window.jQuery,wind
   'use strict';
 
   $(function () {
-    // FastShell
+
+  	// disable overscroll in non-scrolling areas
+
+	// $('header, main .view h3').on('touchmove',function(event) {
+	// 	event.preventDefault();
+	// });
+
+	//owl carousel init
 
 	$('.owl-carousel').owlCarousel({
 	    loop: false,
@@ -63,6 +70,8 @@ a.fn.owlCarousel.Constructor.Plugins.Animate=e}(window.Zepto||window.jQuery,wind
 	        }
 	    }
 	})
+
+	// jquery css scrollbar init
 
 	$('.scrollbar-inner').scrollbar();
 
