@@ -7,7 +7,7 @@
  * Copyright 2017. MIT licensed.
  */
 /* touche.js */
-!function(){"use strict";function b(a){if(!(this instanceof b))return new b(a);if(!a)throw new Error("No DOM elements passed into Touche");return this.nodes=a,this}var a="ontouchstart"in window||"msmaxtouchpoints"in window.navigator;if(b.prototype.on=function(b,c){var d,g,e=this.nodes,f=e.length;if(a&&"click"===b&&(d=!0),g=function(a,b,c){var e,f=function(){!e&&(e=!0)&&c.apply(this,arguments)};a.addEventListener(b,f,!1),d&&a.addEventListener("touchend",f,!1)},f)for(;f--;)g(e[f],b,c);else g(e,b,c);return this},window.Touche=b,window.jQuery&&a){var c=jQuery.fn.on,d=jQuery.fn.off,e=function(a){return"click"==a.slice(0,5)?a.replace("click","touchend"):a};jQuery.fn.on=function(){return"string"==typeof arguments[0]&&(arguments[0]=e(arguments[0])),c.apply(this,arguments),this},jQuery.fn.off=function(){return"string"==typeof arguments[0]&&(arguments[0]=e(arguments[0])),d.apply(this,arguments),this}}}();
+//!function(){"use strict";function b(a){if(!(this instanceof b))return new b(a);if(!a)throw new Error("No DOM elements passed into Touche");return this.nodes=a,this}var a="ontouchstart"in window||"msmaxtouchpoints"in window.navigator;if(b.prototype.on=function(b,c){var d,g,e=this.nodes,f=e.length;if(a&&"click"===b&&(d=!0),g=function(a,b,c){var e,f=function(){!e&&(e=!0)&&c.apply(this,arguments)};a.addEventListener(b,f,!1),d&&a.addEventListener("touchend",f,!1)},f)for(;f--;)g(e[f],b,c);else g(e,b,c);return this},window.Touche=b,window.jQuery&&a){var c=jQuery.fn.on,d=jQuery.fn.off,e=function(a){return"click"==a.slice(0,5)?a.replace("click","touchend"):a};jQuery.fn.on=function(){return"string"==typeof arguments[0]&&(arguments[0]=e(arguments[0])),c.apply(this,arguments),this},jQuery.fn.off=function(){return"string"==typeof arguments[0]&&(arguments[0]=e(arguments[0])),d.apply(this,arguments),this}}}();
 
 /**
  * Owl Carousel v2.2.1
@@ -42,9 +42,9 @@ a.fn.owlCarousel.Constructor.Plugins.Animate=e}(window.Zepto||window.jQuery,wind
 
   	// disable overscroll in non-scrolling areas
 
-	// $('header, main .view h3').on('touchmove',function(event) {
-	// 	event.preventDefault();
-	// });
+	$('header, main .view h3').on('touchmove',function(event) {
+		event.preventDefault();
+	});
 
 	//owl carousel init
 
