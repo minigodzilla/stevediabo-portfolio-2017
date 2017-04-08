@@ -2,13 +2,18 @@ header {
 	background-position: 50% 50%;
 
 	h1 {
-		@include position(absolute, 160px 0 0 50%);
-		transform: translate3d(-100%,0,0);
+		@include position(absolute, 170px 0 0 50%);
+		transform: translate3d(-102%,0,0);
+		width: 35%;
+		height: 110px;
+		background-position: 100% 50%;
 	}
 
 	h2 {
-		@include position(absolute, 220px 0 0 50%);
-		transform: translate3d(-100%,0,0);
+		@include position(absolute, 310px 0 0 50%);
+		transform: translate3d(-50%,0,0);
+		font-size: 13.1px;
+		width: 320px;
 	}
 
 }

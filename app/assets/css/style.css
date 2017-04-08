@@ -458,11 +458,9 @@ nav {
       width: 100%;
       height: 44px;
       line-height: 44px;
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: #161616;
       color: rgba(255, 255, 255, 0.75);
       cursor: pointer; }
-      nav ul li:active {
-        background-color: rgba(0, 0, 0, 0.75); }
       nav ul li:nth-child(1) {
         -webkit-transform: translate3d(0, 300px, 0);
                 transform: translate3d(0, 300px, 0); }
@@ -583,7 +581,7 @@ main {
         left: 0px;
         width: 44px;
         height: 44px;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: #161616;
         overflow: hidden;
         -webkit-transform: translate3d(-46px, 0, 0);
                 transform: translate3d(-46px, 0, 0);
@@ -616,7 +614,7 @@ main {
         bottom: auto;
         left: 0px;
         height: 44px;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: #161616;
         padding: 0 12px;
         -webkit-transform: translate3d(0, 0, 0);
                 transform: translate3d(0, 0, 0);
@@ -684,7 +682,7 @@ main {
                 transform: translate3d(0, -50%, 0);
         width: 44px;
         height: 88px;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: #161616;
         overflow: hidden;
         text-indent: -999px;
         background-position: 50% 50%;
@@ -782,39 +780,44 @@ main {
     background-position: 50% 50%; }
     header h1 {
       position: absolute;
-      top: 160px;
+      top: 170px;
       left: 50%;
-      -webkit-transform: translate3d(-100%, 0, 0);
-              transform: translate3d(-100%, 0, 0); }
+      -webkit-transform: translate3d(-102%, 0, 0);
+              transform: translate3d(-102%, 0, 0);
+      width: 35%;
+      height: 110px;
+      background-position: 100% 50%; }
     header h2 {
       position: absolute;
-      top: 220px;
+      top: 310px;
       left: 50%;
-      -webkit-transform: translate3d(-100%, 0, 0);
-              transform: translate3d(-100%, 0, 0); }
+      -webkit-transform: translate3d(-50%, 0, 0);
+              transform: translate3d(-50%, 0, 0);
+      font-size: 13.1px;
+      width: 320px; }
   nav ul li {
     position: absolute;
     top: 0px;
     left: 50%;
     width: 320px; }
     nav ul li:nth-child(1) {
-      -webkit-transform: translate3d(-100%, 260px, 0);
-              transform: translate3d(-100%, 260px, 0); }
+      -webkit-transform: translate3d(6%, 226px, 0);
+              transform: translate3d(6%, 226px, 0); }
     nav ul li:nth-child(2) {
-      -webkit-transform: translate3d(-100%, 306px, 0);
-              transform: translate3d(-100%, 306px, 0); }
+      -webkit-transform: translate3d(6%, 272px, 0);
+              transform: translate3d(6%, 272px, 0); }
     nav ul li:nth-child(3) {
-      -webkit-transform: translate3d(-100%, 352px, 0);
-              transform: translate3d(-100%, 352px, 0); }
+      -webkit-transform: translate3d(6%, 318px, 0);
+              transform: translate3d(6%, 318px, 0); }
     nav ul li:nth-child(4) {
-      -webkit-transform: translate3d(-100%, 398px, 0);
-              transform: translate3d(-100%, 398px, 0); }
+      -webkit-transform: translate3d(6%, 398px, 0);
+              transform: translate3d(6%, 398px, 0); }
     nav ul li:nth-child(5) {
-      -webkit-transform: translate3d(-100%, 444px, 0);
-              transform: translate3d(-100%, 444px, 0); }
+      -webkit-transform: translate3d(6%, 444px, 0);
+              transform: translate3d(6%, 444px, 0); }
     nav ul li:nth-child(6) {
-      -webkit-transform: translate3d(-100%, 490px, 0);
-              transform: translate3d(-100%, 490px, 0); }
+      -webkit-transform: translate3d(6%, 490px, 0);
+              transform: translate3d(6%, 490px, 0); }
   main .background {
     background-position: 50% 50%;
     -webkit-filter: blur(16px);
@@ -1166,7 +1169,7 @@ main {
   opacity: 1; }
 
 .scrollbar-inner > .scroll-element.scroll-draggable .scroll-bar {
-  background-color: rgba(0, 0, 0, 0.5); }
+  background-color: #161616; }
 
 /* update scrollbar offset if both scrolls are visible */
 .scrollbar-inner > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_track {

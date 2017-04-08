@@ -16,10 +16,6 @@ nav {
 			color: $text-primary;
 			cursor: pointer;
 
-			&:active {
-				background-color: $trans-black-darker;
-			}
-
 			&:nth-child(1) {
 				transform: translate3d(0,300px,0);
 			}

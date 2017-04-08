@@ -35,6 +35,9 @@ gulp.task('css', function () {
 });
 
 gulp.task('js',function(){
+  gulp.src('src/js/vendor.js')
+    .pipe(gulp.dest('app/assets/js'))
+    .pipe(browserSync.reload({stream:true, once: true}));
   gulp.src('src/js/scripts.js')
     .pipe(jshint('.jshintrc'))
     .pipe(jshint.reporter('default'))
