@@ -18,23 +18,17 @@ header {
 	}
 
 	h1 {
-		@include position(absolute, 170px 18px 0 0);
+		@include position(absolute, 170px 0 0 12px);
 		margin: 0;
-		width: 244px;
+		width: 80%;
 		height: 52px;
 		background-image: url('../img/logo.svg');
-		background-position: 100% 0;
+		background-position: 0 0;
 		background-repeat: no-repeat;
 	}
 
 	h2 {
-		@include position(absolute, 230px 18px auto auto);
-		margin: 0;
-		width: 225px;
-		font-size: 11.5px;
-		font-weight: inherit;
-		color: $text-secondary;
-		white-space: nowrap;
+		display: none;
 	}
 
 }

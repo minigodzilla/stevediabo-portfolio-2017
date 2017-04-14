@@ -421,25 +421,15 @@ header {
   header h1 {
     position: absolute;
     top: 170px;
-    right: 18px;
+    left: 12px;
     margin: 0;
-    width: 244px;
+    width: 80%;
     height: 52px;
     background-image: url("../img/logo.svg");
-    background-position: 100% 0;
+    background-position: 0 0;
     background-repeat: no-repeat; }
   header h2 {
-    position: absolute;
-    top: 230px;
-    right: 18px;
-    bottom: auto;
-    left: auto;
-    margin: 0;
-    width: 225px;
-    font-size: 11.5px;
-    font-weight: inherit;
-    color: rgba(255, 255, 255, 0.5);
-    white-space: nowrap; }
+    display: none; }
 
 nav {
   font-size: 18px; }
@@ -510,6 +500,8 @@ nav {
             background-image: url("../img/download.svg"); }
           nav ul li .btn .glyph.glyph-ext-link {
             background-image: url("../img/ext-link.svg"); }
+      nav ul li.pressed {
+        background-color: #111; }
       nav ul li .heading {
         display: block;
         position: absolute;
@@ -785,7 +777,7 @@ main {
       -webkit-transform: translate3d(-102%, 0, 0);
               transform: translate3d(-102%, 0, 0);
       width: 35%;
-      height: 110px;
+      height: 140px;
       background-position: 100% 50%; }
     header h2 {
       position: absolute;
@@ -799,7 +791,7 @@ main {
     position: absolute;
     top: 0px;
     left: 50%;
-    width: 320px; }
+    width: 35%; }
     nav ul li:nth-child(1) {
       -webkit-transform: translate3d(6%, 226px, 0);
               transform: translate3d(6%, 226px, 0); }
@@ -824,32 +816,31 @@ main {
             filter: blur(16px); }
   main .view h3 {
     position: absolute;
-    right: 50%;
-    left: auto;
-    width: 320px;
+    left: 50%;
+    width: 35%;
     overflow: hidden;
     transition: all 500ms ease; }
   main .view.view-1 h3 {
-    -webkit-transform: translate3d(0, 260px, 0);
-            transform: translate3d(0, 260px, 0); }
+    -webkit-transform: translate3d(6%, 226px, 0);
+            transform: translate3d(6%, 226px, 0); }
   main .view.view-2 h3 {
-    -webkit-transform: translate3d(0, 306px, 0);
-            transform: translate3d(0, 306px, 0); }
+    -webkit-transform: translate3d(6%, 272px, 0);
+            transform: translate3d(6%, 272px, 0); }
   main .view.view-3 h3 {
-    -webkit-transform: translate3d(0, 352px, 0);
-            transform: translate3d(0, 352px, 0); }
+    -webkit-transform: translate3d(6%, 318px, 0);
+            transform: translate3d(6%, 318px, 0); }
   main .view.view-4 h3 {
-    -webkit-transform: translate3d(0, 398px, 0);
-            transform: translate3d(0, 398px, 0); }
+    -webkit-transform: translate3d(6%, 398px, 0);
+            transform: translate3d(6%, 398px, 0); }
   main .view.view-5 h3 {
-    -webkit-transform: translate3d(0, 444px, 0);
-            transform: translate3d(0, 444px, 0); }
+    -webkit-transform: translate3d(6%, 444px, 0);
+            transform: translate3d(6%, 444px, 0); }
   main .view.view-6 h3 {
-    -webkit-transform: translate3d(0, 490px, 0);
-            transform: translate3d(0, 490px, 0); }
+    -webkit-transform: translate3d(6%, 490px, 0);
+            transform: translate3d(6%, 490px, 0); }
   main .view.shown.locked h3 {
     width: 100%;
-    right: 0; }
+    left: 0; }
   main .view .slide-carousel .slide {
     width: 40%;
     margin-right: 5%; } }

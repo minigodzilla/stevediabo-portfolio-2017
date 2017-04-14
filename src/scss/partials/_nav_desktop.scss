@@ -4,7 +4,7 @@ nav {
 
 		li {
 			@include position(absolute, 0px 0 0 50%);
-			width: 320px;
+			width: 35%;
 
 			&:nth-child(1) {
 				transform: translate3d(6%,226px,0);

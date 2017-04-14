@@ -71,6 +71,11 @@ nav {
 					}
 				}
 			}
+
+			&.pressed {
+				background-color: #111;
+			}
+
 			.heading {
 				display: block;
 				@include position(absolute, 0px 52px auto 0px);

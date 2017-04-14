@@ -7,34 +7,34 @@ main {
 	.view {
 
 		h3 {
-			@include position(absolute, 0 50% 0 auto);
-			width: 320px;
+			@include position(absolute, 0 0 0 50%);
+			width: 35%;
 			overflow: hidden;
 			transition: all 500ms ease;
 		}
 
 		&.view-1 h3 {
-			transform: translate3d(0,260px,0);
+			transform: translate3d(6%,226px,0);
 		}
 
 		&.view-2 h3 {
-			transform: translate3d(0,306px,0);
+			transform: translate3d(6%,272px,0);
 		}
 
 		&.view-3 h3 {
-			transform: translate3d(0,352px,0);
+			transform: translate3d(6%,318px,0);
 		}
 
 		&.view-4 h3 {
-			transform: translate3d(0,398px,0);
+			transform: translate3d(6%,398px,0);
 		}
 
 		&.view-5 h3 {
-			transform: translate3d(0,444px,0);
+			transform: translate3d(6%,444px,0);
 		}
 
 		&.view-6 h3 {
-			transform: translate3d(0,490px,0);
+			transform: translate3d(6%,490px,0);
 		}
 
 		&.shown {
@@ -43,7 +43,7 @@ main {
 
 				h3 {
 					width: 100%;
-					right: 0;
+					left: 0;
 				}
 			}
 		}
