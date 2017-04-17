@@ -16,6 +16,10 @@ nav {
 			color: $text-primary;
 			cursor: pointer;
 
+			&.pressed {
+				background-color: #060606;
+			}
+
 			&:nth-child(1) {
 				transform: translate3d(0,300px,0);
 			}
@@ -70,10 +74,6 @@ nav {
 						background-image: url('../img/ext-link.svg');
 					}
 				}
-			}
-
-			&.pressed {
-				background-color: #111;
 			}
 
 			.heading {
