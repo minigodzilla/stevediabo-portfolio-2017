@@ -15,7 +15,7 @@
 body {
   background-color: #222;
   color: rgba(255, 255, 255, 0.75);
-  font-family: 'Varela Round', sans-serif;
+  font-family: Varela, sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 1.5;
@@ -718,11 +718,13 @@ main {
             margin: 0 0 8px 0;
             line-height: 1;
             font-size: 28px;
-            font-weight: inherit; }
+            font-family: Podkova,serif;
+            font-weight: 700;
+            letter-spacing: -.025em; }
         main .view .owl-carousel .slide img {
           display: block;
           width: 90%;
-          margin: 0 auto; }
+          margin: 20px auto; }
         main .view .owl-carousel .slide h6 {
           margin: 0;
           font-size: inherit;

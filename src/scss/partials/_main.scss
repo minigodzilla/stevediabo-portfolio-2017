@@ -204,14 +204,16 @@ main {
 						margin: 0 0 8px 0;
 						line-height: 1;
 						font-size: 28px;
-						font-weight: inherit;
+						font-family: Podkova,serif;
+						font-weight: 700;
+						letter-spacing: -.025em;
 					}
 				}
 
 				img {
 					display: block;
 					width: 90%;
-					margin: 0 auto;
+					margin: 20px auto;
 				}
 
 				h6 {
