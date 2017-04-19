@@ -448,10 +448,8 @@ nav {
     padding: 0; }
     nav ul li {
       position: absolute;
-      top: 0px;
       right: auto;
       bottom: auto;
-      left: 0px;
       -webkit-transform: translate3d(0, 0, 0);
               transform: translate3d(0, 0, 0);
       width: 100%;
@@ -848,6 +846,14 @@ main {
   main .view .slide-carousel .slide {
     width: 40%;
     margin-right: 5%; } }
+
+@media only screen and (min-width: 1440px) {
+  header h1 {
+    width: 25%; }
+  nav ul li {
+    width: 25%; }
+  main .view h3 {
+    width: 25%; } }
 
 @media print {
   * {

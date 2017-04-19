@@ -7,7 +7,7 @@ nav {
 		padding: 0;
 
 		li {
-			@include position(absolute, 0px auto auto 0px);
+			@include position(absolute, 0 auto auto 0);
 			transform: translate3d(0,0,0);
 			width: 100%;
 			height: 44px;
