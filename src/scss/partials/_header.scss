@@ -25,12 +25,14 @@ header {
 	}
 
 	h1 {
-		@include position(absolute, 195px 0 0 12px);
+		@include position(absolute, 50% 0 0 12px);
+		transform: translate3d(0,-100%,0);
 		margin: 0;
 		width: 80%;
-		height: 52px;
+		min-width: 256px;
+		height: 48px;
 		background-image: url('../img/logo.svg');
-		background-position: 0 0;
+		background-position: 0 100%;
 		background-repeat: no-repeat;
 	}
 

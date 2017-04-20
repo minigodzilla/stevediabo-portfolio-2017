@@ -49,16 +49,16 @@
 
     // listeners
 
-    $('.touchable').on('vmousedown', function() {
+    $('.touchable').on('mousedown touchstart', function() {
 		$(this).addClass('pressed');
-	    $(this).on('vmouseup', function() {
+	    $(this).on('mouseup touchend', function() {
 			$(this).removeClass('pressed');
 		});
 	});
 
 	// nav buttons
 
-	$('nav ul li.nav-link').on('vmouseup', function() {
+	$('nav ul li.nav-link').on('mouseup touchend', function() {
 
 		var href = $(this).attr('data-href');
 
@@ -79,7 +79,7 @@
 	
 	// back buttons
 
-	$('main .view h3 .btn-back').on('vmouseup', function() {
+	$('main .view h3 .btn-back').on('mouseup touchend', function() {
 
 		var href = $(this).parents().parents().attr('data-view-name');
 

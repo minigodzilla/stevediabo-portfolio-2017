@@ -429,13 +429,16 @@ header {
     z-index: 1; }
   header h1 {
     position: absolute;
-    top: 195px;
+    top: 50%;
     left: 12px;
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
     margin: 0;
     width: 80%;
-    height: 52px;
+    min-width: 256px;
+    height: 48px;
     background-image: url("../img/logo.svg");
-    background-position: 0 0;
+    background-position: 0 100%;
     background-repeat: no-repeat; }
   header h2 {
     display: none; }
@@ -450,6 +453,7 @@ nav {
       position: absolute;
       right: auto;
       bottom: auto;
+      top: calc(50% + 40px);
       -webkit-transform: translate3d(0, 0, 0);
               transform: translate3d(0, 0, 0);
       width: 100%;
@@ -461,23 +465,23 @@ nav {
       nav ul li.pressed {
         background-color: #111; }
       nav ul li:nth-child(1) {
-        -webkit-transform: translate3d(0, 300px, 0);
-                transform: translate3d(0, 300px, 0); }
+        -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0); }
       nav ul li:nth-child(2) {
-        -webkit-transform: translate3d(0, 346px, 0);
-                transform: translate3d(0, 346px, 0); }
+        -webkit-transform: translate3d(0, 46px, 0);
+                transform: translate3d(0, 46px, 0); }
       nav ul li:nth-child(3) {
-        -webkit-transform: translate3d(0, 392px, 0);
-                transform: translate3d(0, 392px, 0); }
+        -webkit-transform: translate3d(0, 92px, 0);
+                transform: translate3d(0, 92px, 0); }
       nav ul li:nth-child(4) {
-        -webkit-transform: translate3d(0, 438px, 0);
-                transform: translate3d(0, 438px, 0); }
+        -webkit-transform: translate3d(0, 138px, 0);
+                transform: translate3d(0, 138px, 0); }
       nav ul li:nth-child(5) {
-        -webkit-transform: translate3d(0, 484px, 0);
-                transform: translate3d(0, 484px, 0); }
+        -webkit-transform: translate3d(0, 184px, 0);
+                transform: translate3d(0, 184px, 0); }
       nav ul li:nth-child(6) {
-        -webkit-transform: translate3d(0, 530px, 0);
-                transform: translate3d(0, 530px, 0); }
+        -webkit-transform: translate3d(0, 230px, 0);
+                transform: translate3d(0, 230px, 0); }
       nav ul li a {
         color: inherit; }
       nav ul li .btn {
@@ -556,10 +560,11 @@ main {
     height: 100%; }
     main .view h3 {
       position: absolute;
-      top: 0px;
+      top: 50%;
       right: auto;
       bottom: auto;
       left: 0px;
+      top: calc(50% + 40px);
       -webkit-transform: translate3d(0, 0, 0);
               transform: translate3d(0, 0, 0);
       width: 100%;
@@ -568,9 +573,9 @@ main {
       margin: 0;
       font-weight: inherit;
       font-size: 18px;
-      transition: -webkit-transform 500ms ease;
-      transition: transform 500ms ease;
-      transition: transform 500ms ease, -webkit-transform 500ms ease; }
+      transition: top 500ms ease, -webkit-transform 500ms ease;
+      transition: transform 500ms ease, top 500ms ease;
+      transition: transform 500ms ease, top 500ms ease, -webkit-transform 500ms ease; }
       main .view h3 .btn {
         display: block;
         position: absolute;
@@ -623,28 +628,29 @@ main {
         transition: transform 500ms ease;
         transition: transform 500ms ease, -webkit-transform 500ms ease; }
     main .view.view-1 h3 {
-      -webkit-transform: translate3d(0, 300px, 0);
-              transform: translate3d(0, 300px, 0); }
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0); }
     main .view.view-2 h3 {
-      -webkit-transform: translate3d(0, 346px, 0);
-              transform: translate3d(0, 346px, 0); }
+      -webkit-transform: translate3d(0, 46px, 0);
+              transform: translate3d(0, 46px, 0); }
     main .view.view-3 h3 {
-      -webkit-transform: translate3d(0, 392px, 0);
-              transform: translate3d(0, 392px, 0); }
+      -webkit-transform: translate3d(0, 92px, 0);
+              transform: translate3d(0, 92px, 0); }
     main .view.view-4 h3 {
-      -webkit-transform: translate3d(0, 438px, 0);
-              transform: translate3d(0, 438px, 0); }
+      -webkit-transform: translate3d(0, 138px, 0);
+              transform: translate3d(0, 138px, 0); }
     main .view.view-5 h3 {
-      -webkit-transform: translate3d(0, 484px, 0);
-              transform: translate3d(0, 484px, 0); }
+      -webkit-transform: translate3d(0, 184px, 0);
+              transform: translate3d(0, 184px, 0); }
     main .view.view-6 h3 {
-      -webkit-transform: translate3d(0, 530px, 0);
-              transform: translate3d(0, 530px, 0); }
+      -webkit-transform: translate3d(0, 230px, 0);
+              transform: translate3d(0, 230px, 0); }
     main .view.shown {
       display: block; }
       main .view.shown.locked h3 {
         -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0); }
+                transform: translate3d(0, 0, 0);
+        top: 0; }
       main .view.shown.back-btn-deployed h3 .btn {
         -webkit-transform: translate3d(0, 0, 0);
                 transform: translate3d(0, 0, 0); }
@@ -780,66 +786,68 @@ main {
 
 @media only screen and (min-width: 768px) {
   header .background {
-    background-position: 50% 50%; }
+    background-position: 50% 30%; }
   header h1 {
     position: absolute;
-    top: 170px;
+    top: 30%;
     left: 50%;
     -webkit-transform: translate3d(-105%, 0, 0);
             transform: translate3d(-105%, 0, 0);
     width: 35%;
-    height: 140px;
+    height: 68px;
     background-position: 100% 50%; }
   nav ul li {
     position: absolute;
     left: 50%;
+    top: calc(30% + 20px);
     width: 35%; }
     nav ul li:nth-child(1) {
-      -webkit-transform: translate3d(4%, 226px, 0);
-              transform: translate3d(4%, 226px, 0); }
+      -webkit-transform: translate3d(4%, 0, 0);
+              transform: translate3d(4%, 0, 0); }
     nav ul li:nth-child(2) {
-      -webkit-transform: translate3d(4%, 272px, 0);
-              transform: translate3d(4%, 272px, 0); }
+      -webkit-transform: translate3d(4%, 46px, 0);
+              transform: translate3d(4%, 46px, 0); }
     nav ul li:nth-child(3) {
-      -webkit-transform: translate3d(4%, 318px, 0);
-              transform: translate3d(4%, 318px, 0); }
+      -webkit-transform: translate3d(4%, 92px, 0);
+              transform: translate3d(4%, 92px, 0); }
     nav ul li:nth-child(4) {
-      -webkit-transform: translate3d(4%, 398px, 0);
-              transform: translate3d(4%, 398px, 0); }
+      -webkit-transform: translate3d(4%, 138px, 0);
+              transform: translate3d(4%, 138px, 0); }
     nav ul li:nth-child(5) {
-      -webkit-transform: translate3d(4%, 444px, 0);
-              transform: translate3d(4%, 444px, 0); }
+      -webkit-transform: translate3d(4%, 184px, 0);
+              transform: translate3d(4%, 184px, 0); }
     nav ul li:nth-child(6) {
-      -webkit-transform: translate3d(4%, 490px, 0);
-              transform: translate3d(4%, 490px, 0); }
+      -webkit-transform: translate3d(4%, 230px, 0);
+              transform: translate3d(4%, 230px, 0); }
   main .background {
-    background-position: 50% 50%;
+    background-position: 50% 30%;
     -webkit-filter: blur(16px);
             filter: blur(16px); }
   main .view h3 {
     position: absolute;
     left: 50%;
+    top: calc(30% + 20px);
     width: 35%;
     overflow: hidden;
     transition: all 500ms ease; }
   main .view.view-1 h3 {
-    -webkit-transform: translate3d(4%, 226px, 0);
-            transform: translate3d(4%, 226px, 0); }
+    -webkit-transform: translate3d(4%, 0, 0);
+            transform: translate3d(4%, 0, 0); }
   main .view.view-2 h3 {
-    -webkit-transform: translate3d(4%, 272px, 0);
-            transform: translate3d(4%, 272px, 0); }
+    -webkit-transform: translate3d(4%, 46px, 0);
+            transform: translate3d(4%, 46px, 0); }
   main .view.view-3 h3 {
-    -webkit-transform: translate3d(4%, 318px, 0);
-            transform: translate3d(4%, 318px, 0); }
+    -webkit-transform: translate3d(4%, 92px, 0);
+            transform: translate3d(4%, 92px, 0); }
   main .view.view-4 h3 {
-    -webkit-transform: translate3d(4%, 398px, 0);
-            transform: translate3d(4%, 398px, 0); }
+    -webkit-transform: translate3d(4%, 138px, 0);
+            transform: translate3d(4%, 138px, 0); }
   main .view.view-5 h3 {
-    -webkit-transform: translate3d(4%, 444px, 0);
-            transform: translate3d(4%, 444px, 0); }
+    -webkit-transform: translate3d(4%, 184px, 0);
+            transform: translate3d(4%, 184px, 0); }
   main .view.view-6 h3 {
-    -webkit-transform: translate3d(4%, 490px, 0);
-            transform: translate3d(4%, 490px, 0); }
+    -webkit-transform: translate3d(4%, 230px, 0);
+            transform: translate3d(4%, 230px, 0); }
   main .view.shown.locked h3 {
     width: 100%;
     left: 0; }

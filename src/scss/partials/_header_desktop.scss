@@ -1,14 +1,14 @@
 header {
 
 	.background {
-		background-position: 50% 50%;
+		background-position: 50% 30%;
 	}
 
 	h1 {
-		@include position(absolute, 170px 0 0 50%);
+		@include position(absolute, 30% 0 0 50%);
 		transform: translate3d(-105%,0,0);
 		width: 35%;
-		height: 140px;
+		height: 68px;
 		background-position: 100% 50%;
 	}
 
