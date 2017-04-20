@@ -784,7 +784,7 @@ main {
   color: #fff;
   text-shadow: none; }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 480px) {
   header .background {
     background-position: 50% 30%; }
   header h1 {
@@ -793,14 +793,15 @@ main {
     left: 50%;
     -webkit-transform: translate3d(-105%, 0, 0);
             transform: translate3d(-105%, 0, 0);
-    width: 35%;
+    width: 42.5%;
+    min-width: 0;
     height: 68px;
     background-position: 100% 50%; }
   nav ul li {
     position: absolute;
     left: 50%;
     top: calc(30% + 20px);
-    width: 35%; }
+    width: 42.5%; }
     nav ul li:nth-child(1) {
       -webkit-transform: translate3d(4%, 0, 0);
               transform: translate3d(4%, 0, 0); }
@@ -827,7 +828,7 @@ main {
     position: absolute;
     left: 50%;
     top: calc(30% + 20px);
-    width: 35%;
+    width: 42.5%;
     overflow: hidden;
     transition: all 500ms ease; }
   main .view.view-1 h3 {
@@ -854,6 +855,14 @@ main {
   main .view .slide-carousel .slide {
     width: 40%;
     margin-right: 5%; } }
+
+@media only screen and (min-width: 768px) {
+  header h1 {
+    width: 35%; }
+  nav ul li {
+    width: 35%; }
+  main .view h3 {
+    width: 35%; } }
 
 @media only screen and (min-width: 1440px) {
   header h1 {

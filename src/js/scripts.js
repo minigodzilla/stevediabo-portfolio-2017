@@ -20,6 +20,10 @@
 	            items: 1,
 	            nav: false
 	        },
+	        480:{
+	            items: 2,
+	            nav: false
+	        },
 	        768:{
 	            items: 2,
 	            stagePadding: 38,

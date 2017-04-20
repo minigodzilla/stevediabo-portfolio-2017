@@ -1,79 +1,9 @@
 main {
-	.background {
-		background-position: 50% 30%;
-		filter: blur(16px);
-	}
 
 	.view {
 
 		h3 {
-			@include position(absolute, 0 0 0 50%);
-			top: calc(30% + 20px);
 			width: 35%;
-			overflow: hidden;
-			transition: all 500ms ease;
-		}
-
-		&.view-1 h3 {
-			transform: translate3d(4%,0,0);
-		}
-
-		&.view-2 h3 {
-			transform: translate3d(4%,46px,0);
-		}
-
-		&.view-3 h3 {
-			transform: translate3d(4%,92px,0);
-		}
-
-		&.view-4 h3 {
-			transform: translate3d(4%,138px,0);
-		}
-
-		&.view-5 h3 {
-			transform: translate3d(4%,184px,0);
-		}
-
-		&.view-6 h3 {
-			transform: translate3d(4%,230px,0);
-		}
-
-		&.shown {
-
-			&.locked {
-
-				h3 {
-					width: 100%;
-					left: 0;
-				}
-			}
-		}
-		.slide-carousel {
-
-			.slide {
-				width: 40%;
-				margin-right: 5%;
-
-				.slide-container {
-					//width: 960px;
-					//margin: 0 auto;
-				}
-
-				.heading {
-					//float: left;
-					//width: 40%;
-				}
-
-				img {
-					//float: right;
-					//width: 60%;
-				}
-
-				.body {
-					//clear: left;
-					//width: 40%;
-				}
-			}
 		}
 	}
 }
