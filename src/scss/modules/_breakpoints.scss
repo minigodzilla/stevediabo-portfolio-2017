@@ -17,11 +17,11 @@
 @media only screen and (min-width:1140px) {
 }
 @media only screen and (min-width:1280px) {
-}
-@media only screen and (min-width:1440px) {
 	@import 'partials/_header_hd.scss';
 	@import 'partials/_nav_hd.scss';
 	@import 'partials/_main_hd.scss';
+}
+@media only screen and (min-width:1440px) {
 }
 @media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
 

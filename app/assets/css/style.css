@@ -864,13 +864,13 @@ main {
   main .view h3 {
     width: 35%; } }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1280px) {
   header h1 {
-    width: 25%; }
+    width: 450px; }
   nav ul li {
-    width: 25%; }
+    width: 450px; }
   main .view h3 {
-    width: 25%; } }
+    width: 450px; } }
 
 @media print {
   * {
