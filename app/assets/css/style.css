@@ -808,7 +808,7 @@ main {
   0% {
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0); }
-  25% {
+  30% {
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0); }
   80% {
@@ -822,7 +822,7 @@ main {
   0% {
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0); }
-  25% {
+  30% {
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0); }
   80% {
@@ -835,41 +835,49 @@ main {
 @-webkit-keyframes carousel-nav-first-use {
   0% {
     opacity: 0; }
-  25% {
+  10% {
     opacity: 0; }
-  35% {
+  20% {
+    opacity: 0; }
+  30% {
+    opacity: 0; }
+  40% {
     opacity: 1; }
-  45% {
+  50% {
     opacity: 0; }
-  55% {
+  60% {
     opacity: 1; }
-  65% {
+  70% {
     opacity: 0; }
-  75% {
+  80% {
     opacity: 1; }
-  85% {
+  90% {
     opacity: 0; }
-  95% {
+  100% {
     opacity: 1; } }
 
 @keyframes carousel-nav-first-use {
   0% {
     opacity: 0; }
-  25% {
+  10% {
     opacity: 0; }
-  35% {
+  20% {
+    opacity: 0; }
+  30% {
+    opacity: 0; }
+  40% {
     opacity: 1; }
-  45% {
+  50% {
     opacity: 0; }
-  55% {
+  60% {
     opacity: 1; }
-  65% {
+  70% {
     opacity: 0; }
-  75% {
+  80% {
     opacity: 1; }
-  85% {
+  90% {
     opacity: 0; }
-  95% {
+  100% {
     opacity: 1; } }
 
 @media only screen and (min-width: 480px) {
