@@ -667,6 +667,9 @@ main {
         body.first-use main .view.shown.back-btn-deployed .view-content .owl-stage {
           -webkit-animation: carousel-first-use 2000ms ease;
                   animation: carousel-first-use 2000ms ease; }
+        body.first-use main .view.shown.back-btn-deployed .view-content .owl-nav {
+          -webkit-animation: carousel-nav-first-use 2000ms ease;
+                  animation: carousel-nav-first-use 2000ms ease; }
     main .view .view-content {
       position: absolute;
       top: 44px;
@@ -703,20 +706,13 @@ main {
           background-position: 50% 50%;
           background-repeat: no-repeat;
           background-size: 66px;
-          transition: opacity 400ms ease, background-color 100ms ease, -webkit-transform 100ms ease;
-          transition: opacity 400ms ease, transform 100ms ease, background-color 100ms ease;
-          transition: opacity 400ms ease, transform 100ms ease, background-color 100ms ease, -webkit-transform 100ms ease; }
+          transition: opacity 400ms ease, background-color 100ms ease; }
           main .view .owl-carousel .owl-nav .owl-prev:hover,
           main .view .owl-carousel .owl-nav .owl-next:hover {
-            -webkit-transform: translateY(-52%);
-                -ms-transform: translateY(-52%);
-                    transform: translateY(-52%); }
+            background-color: #091e22; }
           main .view .owl-carousel .owl-nav .owl-prev:active,
           main .view .owl-carousel .owl-nav .owl-next:active {
-            -webkit-transform: translateY(-48%);
-                -ms-transform: translateY(-48%);
-                    transform: translateY(-48%);
-            background-color: #091e22; }
+            background-color: #13414b; }
         main .view .owl-carousel .owl-nav .owl-prev {
           background-image: url("../img/arrow-back.svg");
           left: 0; }
@@ -835,6 +831,46 @@ main {
   100% {
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0); } }
+
+@-webkit-keyframes carousel-nav-first-use {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 0; }
+  35% {
+    opacity: 1; }
+  45% {
+    opacity: 0; }
+  55% {
+    opacity: 1; }
+  65% {
+    opacity: 0; }
+  75% {
+    opacity: 1; }
+  85% {
+    opacity: 0; }
+  95% {
+    opacity: 1; } }
+
+@keyframes carousel-nav-first-use {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 0; }
+  35% {
+    opacity: 1; }
+  45% {
+    opacity: 0; }
+  55% {
+    opacity: 1; }
+  65% {
+    opacity: 0; }
+  75% {
+    opacity: 1; }
+  85% {
+    opacity: 0; }
+  95% {
+    opacity: 1; } }
 
 @media only screen and (min-width: 480px) {
   header .background {

@@ -141,6 +141,12 @@ main {
               animation: carousel-first-use 2000ms ease;
             }
           }
+          .owl-nav {
+
+            body.first-use & {
+              animation: carousel-nav-first-use 2000ms ease;
+            }
+          }
 				}
 			}
 		}
@@ -179,15 +185,14 @@ main {
 					background-position: 50% 50%;
 					background-repeat: no-repeat;
           background-size: 66px;
-					transition: opacity 400ms ease, transform 100ms ease, background-color 100ms ease;
+					transition: opacity 400ms ease, background-color 100ms ease;
 
           &:hover {
-            transform: translateY(-52%);
+            background-color: $accent-color-darkest;
           }
 
           &:active {
-            transform: translateY(-48%);
-            background-color: $accent-color-darkest;
+            background-color: $accent-color-darker;
           }
 				}
 
