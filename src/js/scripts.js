@@ -98,6 +98,7 @@
 
 		setTimeout(function() {
 			$('*[data-view-name=' + href + ']').removeClass('shown');
+      $('body').removeClass('first-use');
 		},1500);
 
 	});
