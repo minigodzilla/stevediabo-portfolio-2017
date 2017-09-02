@@ -18,21 +18,21 @@
 	    responsive:{
 	        0:{
 	            items: 1,
-	            nav: false
+	            nav: true
 	        },
 	        480:{
 	            items: 2,
-	            nav: false
+	            nav: true
 	        },
 	        768:{
 	            items: 2,
-	            stagePadding: 38,
-	            margin: 40,
+	            stagePadding: 43,
+	            margin: 24,
 	            nav: true
 	        },
 	        1024:{
 	            items: 3,
-	            stagePadding: 38,
+	            stagePadding: 40,
 	            margin: 20,
 	            nav: true
 	        },
@@ -78,7 +78,7 @@
 		},1000);
 
 	});
-	
+
 	// back buttons
 
 	$('main .view h3 .btn-back').on('mouseup touchend', function() {
@@ -101,7 +101,7 @@
 		},1500);
 
 	});
-	
+
 
   });
 

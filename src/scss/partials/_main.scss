@@ -154,6 +154,11 @@ main {
 			}
 
 			.owl-nav {
+        display: none;
+
+        .no-touch & {
+          display: block;
+        }
 
 				.owl-prev,
 				.owl-next {
@@ -161,30 +166,39 @@ main {
 					transform: translate3d(0,-50%,0);
 					width: 44px;
 					height: 88px;
-					background-color: $trans-black-normal;
+					background-color: $accent-color;
 					overflow: hidden;
 					text-indent: -999px;
 					background-position: 50% 50%;
 					background-repeat: no-repeat;
-					background-size: contain;
-					transition: opacity 200ms ease;
+          background-size: 44px;
+					transition: opacity 400ms ease;
+          //box-shadow: $black 0 0 22px;
 				}
 
 				.owl-prev {
-					background-image: url('../img/arrow-back.svg');
+					background-image: url('../img/arrow-back-black.svg');
 					left: 0;
 				}
 
 				.owl-next {
-					background-image: url('../img/arrow-fwd.svg');
+					background-image: url('../img/arrow-fwd-black.svg');
 					right: 0;
+
+          &:hover {
+
+          }
 				}
 
 				.disabled {
-					opacity: 0.4;
+					opacity: 0;
 					cursor: default;
 				}
 			}
+
+      .owl-stage {
+        zoom: 0.9;
+      }
 
 			.slide {
 				height: 100%;
