@@ -49,11 +49,11 @@ main {
 				background-color: $trans-black-normal;
 				overflow: hidden;
 				transform: translate3d(-46px,0,0);
-				transition: transform 500ms ease;
+				transition: transform 500ms ease, background-color 100ms ease;
 				cursor: pointer;
 
 				&.pressed {
-					background-color: #111;
+					background-color: $accent-color-darkest;
 				}
 
 				.glyph {
@@ -173,31 +173,31 @@ main {
 					transform: translate3d(0,-50%,0);
 					width: 44px;
 					height: 88px;
-					background-color: $accent-color;
+					background-color: $trans-black-normal;
 					overflow: hidden;
 					text-indent: -999px;
 					background-position: 50% 50%;
 					background-repeat: no-repeat;
-          background-size: 44px;
+          background-size: 66px;
 					transition: opacity 400ms ease, transform 100ms ease, background-color 100ms ease;
 
           &:hover {
-            transform: translateY(-52.5%);
+            transform: translateY(-52%);
           }
 
           &:active {
-            transform: translateY(-47.5%);
-            background-color: $accent-color-darker;
+            transform: translateY(-48%);
+            background-color: $accent-color-darkest;
           }
 				}
 
 				.owl-prev {
-					background-image: url('../img/arrow-back-black.svg');
+					background-image: url('../img/arrow-back.svg');
 					left: 0;
 				}
 
 				.owl-next {
-					background-image: url('../img/arrow-fwd-black.svg');
+					background-image: url('../img/arrow-fwd.svg');
 					right: 0;
 
           &:hover {

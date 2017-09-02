@@ -461,9 +461,10 @@ nav {
       line-height: 44px;
       background-color: #161616;
       color: rgba(255, 255, 255, 0.75);
-      cursor: pointer; }
+      cursor: pointer;
+      transition: background-color 100ms ease; }
       nav ul li.pressed {
-        background-color: #111; }
+        background-color: #091e22; }
       nav ul li:nth-child(1) {
         -webkit-transform: translate3d(0, 0, 0);
                 transform: translate3d(0, 0, 0); }
@@ -589,12 +590,12 @@ main {
         overflow: hidden;
         -webkit-transform: translate3d(-46px, 0, 0);
                 transform: translate3d(-46px, 0, 0);
-        transition: -webkit-transform 500ms ease;
-        transition: transform 500ms ease;
-        transition: transform 500ms ease, -webkit-transform 500ms ease;
+        transition: background-color 100ms ease, -webkit-transform 500ms ease;
+        transition: transform 500ms ease, background-color 100ms ease;
+        transition: transform 500ms ease, background-color 100ms ease, -webkit-transform 500ms ease;
         cursor: pointer; }
         main .view h3 .btn.pressed {
-          background-color: #111; }
+          background-color: #091e22; }
         main .view h3 .btn .glyph {
           position: absolute;
           top: 0px;
@@ -696,31 +697,31 @@ main {
                   transform: translate3d(0, -50%, 0);
           width: 44px;
           height: 88px;
-          background-color: #278;
+          background-color: #161616;
           overflow: hidden;
           text-indent: -999px;
           background-position: 50% 50%;
           background-repeat: no-repeat;
-          background-size: 44px;
+          background-size: 66px;
           transition: opacity 400ms ease, background-color 100ms ease, -webkit-transform 100ms ease;
           transition: opacity 400ms ease, transform 100ms ease, background-color 100ms ease;
           transition: opacity 400ms ease, transform 100ms ease, background-color 100ms ease, -webkit-transform 100ms ease; }
           main .view .owl-carousel .owl-nav .owl-prev:hover,
           main .view .owl-carousel .owl-nav .owl-next:hover {
-            -webkit-transform: translateY(-52.5%);
-                -ms-transform: translateY(-52.5%);
-                    transform: translateY(-52.5%); }
+            -webkit-transform: translateY(-52%);
+                -ms-transform: translateY(-52%);
+                    transform: translateY(-52%); }
           main .view .owl-carousel .owl-nav .owl-prev:active,
           main .view .owl-carousel .owl-nav .owl-next:active {
-            -webkit-transform: translateY(-47.5%);
-                -ms-transform: translateY(-47.5%);
-                    transform: translateY(-47.5%);
-            background-color: #18535f; }
+            -webkit-transform: translateY(-48%);
+                -ms-transform: translateY(-48%);
+                    transform: translateY(-48%);
+            background-color: #091e22; }
         main .view .owl-carousel .owl-nav .owl-prev {
-          background-image: url("../img/arrow-back-black.svg");
+          background-image: url("../img/arrow-back.svg");
           left: 0; }
         main .view .owl-carousel .owl-nav .owl-next {
-          background-image: url("../img/arrow-fwd-black.svg");
+          background-image: url("../img/arrow-fwd.svg");
           right: 0; }
         main .view .owl-carousel .owl-nav .disabled {
           opacity: 0;
