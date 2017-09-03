@@ -137,14 +137,14 @@ main {
 
           .owl-stage {
 
-            body.first-use & {
+            .touch body.first-use & {
               animation: carousel-first-use 2000ms ease;
             }
           }
           .owl-nav {
 
             body.first-use & {
-              animation: carousel-nav-first-use 2000ms ease;
+              animation: carousel-nav-first-use 4000ms ease;
             }
           }
 				}

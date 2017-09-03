@@ -664,12 +664,12 @@ main {
                 transform: translate3d(46px, 0, 0); }
       main .view.shown.back-btn-deployed .view-content {
         opacity: 1; }
-        body.first-use main .view.shown.back-btn-deployed .view-content .owl-stage {
+        .touch body.first-use main .view.shown.back-btn-deployed .view-content .owl-stage {
           -webkit-animation: carousel-first-use 2000ms ease;
                   animation: carousel-first-use 2000ms ease; }
         body.first-use main .view.shown.back-btn-deployed .view-content .owl-nav {
-          -webkit-animation: carousel-nav-first-use 2000ms ease;
-                  animation: carousel-nav-first-use 2000ms ease; }
+          -webkit-animation: carousel-nav-first-use 4000ms ease;
+                  animation: carousel-nav-first-use 4000ms ease; }
     main .view .view-content {
       position: absolute;
       top: 44px;
@@ -838,7 +838,7 @@ main {
   10% {
     opacity: 0; }
   20% {
-    opacity: 0; }
+    opacity: 1; }
   30% {
     opacity: 0; }
   40% {
@@ -852,7 +852,7 @@ main {
   80% {
     opacity: 1; }
   90% {
-    opacity: 0; }
+    opacity: 1; }
   100% {
     opacity: 1; } }
 
@@ -862,7 +862,7 @@ main {
   10% {
     opacity: 0; }
   20% {
-    opacity: 0; }
+    opacity: 1; }
   30% {
     opacity: 0; }
   40% {
@@ -876,7 +876,7 @@ main {
   80% {
     opacity: 1; }
   90% {
-    opacity: 0; }
+    opacity: 1; }
   100% {
     opacity: 1; } }
 
