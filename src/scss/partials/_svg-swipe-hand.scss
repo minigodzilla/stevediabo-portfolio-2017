@@ -1,0 +1,32 @@
+#svg-swipe-hand {
+  position: absolute;
+  z-index: 3;
+  width: 100px;
+  height: 160px;
+  left: 50%;
+  top: 50%;
+  margin-left: 24px;
+  opacity: 0;
+  //display: none;
+
+  body.first-use-animations & {
+    display: block;
+    animation: swipe-hand-animate-in-out 2000ms ease;
+  }
+
+  #swipe {
+    transform-origin: 10px 0;
+    transform: scaleX(0);
+
+    body.first-use-animations & {
+      animation: swipe-animate-in-out 2000ms ease;
+    }
+  }
+
+  #hand {
+
+    body.first-use-animations & {
+      animation: hand-animate-in-out 2000ms ease;
+    }
+  }
+}

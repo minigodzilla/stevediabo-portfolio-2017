@@ -134,19 +134,6 @@ main {
 
 				.view-content {
 					opacity: 1;
-
-          .owl-stage {
-
-            .touch body.first-use & {
-              animation: carousel-first-use 2000ms ease;
-            }
-          }
-          .owl-nav {
-
-            body.first-use & {
-              animation: carousel-nav-first-use 4000ms ease;
-            }
-          }
 				}
 			}
 		}
@@ -155,7 +142,6 @@ main {
 			width: 100vw;
 			transition: opacity 500ms ease;
 			opacity: 0;
-
 		}
 		.owl-carousel {
 			height: 100%;
@@ -165,6 +151,13 @@ main {
 			.owl-item {
 				height: 100%;
 			}
+
+      .owl-stage {
+
+        body.first-use-animations & {
+          animation: carousel-first-use 2000ms ease;
+        }
+      }
 
 			.owl-nav {
         display: none;

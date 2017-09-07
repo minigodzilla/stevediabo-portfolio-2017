@@ -81,9 +81,13 @@
 			$('*[data-view-name=' + href + ']').addClass('locked');
 		},500);
 
-		setTimeout(function() {
-			$('*[data-view-name=' + href + ']').addClass('back-btn-deployed');
-		},1000);
+    setTimeout(function() {
+      $('*[data-view-name=' + href + ']').addClass('back-btn-deployed');
+    },1000);
+
+    setTimeout(function() {
+      $('body').addClass('first-use-animations');
+    },1500);
 
 	});
 
@@ -106,7 +110,8 @@
 
 		setTimeout(function() {
 			$('*[data-view-name=' + href + ']').removeClass('shown');
-      $('body').removeClass('first-use');
+      //$('body').removeClass('first-use first-use-animations');
+      $('body').removeClass('first-use-animations');
 		},1500);
 
 	});
