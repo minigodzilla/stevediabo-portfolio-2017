@@ -162,6 +162,7 @@ main {
 			.owl-nav {
         display: none;
 
+        .windows &,
         .no-touch & {
           display: block;
         }

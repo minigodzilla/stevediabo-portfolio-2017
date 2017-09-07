@@ -684,6 +684,7 @@ main {
                 animation: carousel-first-use 2000ms ease; }
       main .view .owl-carousel .owl-nav {
         display: none; }
+        .windows main .view .owl-carousel .owl-nav,
         .no-touch main .view .owl-carousel .owl-nav {
           display: block; }
         main .view .owl-carousel .owl-nav .owl-prev,
