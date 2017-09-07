@@ -783,7 +783,8 @@ main {
   left: 50%;
   top: 50%;
   margin-left: 24px;
-  opacity: 0; }
+  opacity: 0;
+  display: none; }
   body.first-use-animations #svg-swipe-hand {
     display: block;
     -webkit-animation: swipe-hand-animate-in-out 2000ms ease;
