@@ -49,12 +49,11 @@ main {
 				background-color: $trans-black-normal;
 				overflow: hidden;
 				transform: translate3d(-46px,0,0);
-				transition: transform 500ms ease, background-color 500ms ease;
+				transition: transform 500ms ease, background-color 50ms ease;
 				cursor: pointer;
 
 				&.pressed {
-					background-color: $accent-color-darkest;
-          transition: background-color 25ms ease;
+					background-color: $accent-color-darker;
 				}
 
 				.glyph {
@@ -172,7 +171,7 @@ main {
 					transform: translate3d(0,-50%,0);
 					width: 44px;
 					height: 88px;
-					background-color: $accent-color-darker;
+					background-color: $trans-black-normal;
 					overflow: hidden;
 					text-indent: -999px;
 					background-position: 50% 50%;
@@ -181,11 +180,11 @@ main {
 					transition: opacity 400ms ease, background-color 100ms ease;
 
           &:hover {
-            background-color: $accent-color-darker;
+            background-color: $accent-color-darkest;
           }
 
           &:active {
-            background-color: $accent-color-darkest;
+            background-color: $accent-color-darker;
           }
 				}
 

@@ -462,10 +462,9 @@ nav {
       background-color: #161616;
       color: rgba(255, 255, 255, 0.75);
       cursor: pointer;
-      transition: background-color 500ms ease; }
+      transition: background-color 50ms ease; }
       nav ul li.pressed {
-        background-color: #091e22;
-        transition: background-color 25ms ease; }
+        background-color: #0e3036; }
       nav ul li:nth-child(1) {
         -webkit-transform: translate3d(0, 0, 0);
                 transform: translate3d(0, 0, 0); }
@@ -591,13 +590,12 @@ main {
         overflow: hidden;
         -webkit-transform: translate3d(-46px, 0, 0);
                 transform: translate3d(-46px, 0, 0);
-        transition: background-color 500ms ease, -webkit-transform 500ms ease;
-        transition: transform 500ms ease, background-color 500ms ease;
-        transition: transform 500ms ease, background-color 500ms ease, -webkit-transform 500ms ease;
+        transition: background-color 50ms ease, -webkit-transform 500ms ease;
+        transition: transform 500ms ease, background-color 50ms ease;
+        transition: transform 500ms ease, background-color 50ms ease, -webkit-transform 500ms ease;
         cursor: pointer; }
         main .view h3 .btn.pressed {
-          background-color: #091e22;
-          transition: background-color 25ms ease; }
+          background-color: #0e3036; }
         main .view h3 .btn .glyph {
           position: absolute;
           top: 0px;
@@ -697,7 +695,7 @@ main {
                 transform: translate3d(0, -50%, 0);
         width: 44px;
         height: 88px;
-        background-color: #13414b;
+        background-color: #161616;
         overflow: hidden;
         text-indent: -999px;
         background-position: 50% 50%;
@@ -706,10 +704,10 @@ main {
         transition: opacity 400ms ease, background-color 100ms ease; }
         main .view .owl-carousel .owl-nav .owl-prev:hover,
         main .view .owl-carousel .owl-nav .owl-next:hover {
-          background-color: #13414b; }
+          background-color: #091e22; }
         main .view .owl-carousel .owl-nav .owl-prev:active,
         main .view .owl-carousel .owl-nav .owl-next:active {
-          background-color: #091e22; }
+          background-color: #0e3036; }
       main .view .owl-carousel .owl-nav .owl-prev {
         background-image: url("../img/arrow-back.svg");
         left: 0; }
