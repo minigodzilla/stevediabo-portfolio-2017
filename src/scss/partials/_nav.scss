@@ -16,10 +16,11 @@ nav {
 			background-color: $trans-black-normal;
 			color: $text-primary;
 			cursor: pointer;
-      transition: background-color 100ms ease;
+      transition: background-color 500ms ease;
 
 			&.pressed {
 				background-color: $accent-color-darkest;
+        transition: background-color 25ms ease;
 			}
 
 			&:nth-child(1) {

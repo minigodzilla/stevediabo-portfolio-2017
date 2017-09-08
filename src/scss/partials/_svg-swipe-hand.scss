@@ -9,7 +9,7 @@
   opacity: 0;
   display: none;
 
-  body.first-use-animations & {
+  body.using-touch.first-use-animations & {
     display: block;
     animation: swipe-hand-animate-in-out 2000ms ease;
   }
@@ -18,14 +18,14 @@
     transform-origin: 10px 0;
     transform: scaleX(0);
 
-    body.first-use-animations & {
+    body.using-touch.first-use-animations & {
       animation: swipe-animate-in-out 2000ms ease;
     }
   }
 
   #hand {
 
-    body.first-use-animations & {
+    body.using-touch.first-use-animations & {
       animation: hand-animate-in-out 2000ms ease;
     }
   }

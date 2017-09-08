@@ -18,27 +18,27 @@
 	    responsive:{
 	        0:{
 	            items: 1,
-	            nav: false
+	            nav: true
 	        },
 	        480:{
 	            items: 2,
-	            nav: false
+	            nav: true
 	        },
 	        768:{
 	            items: 2,
 	            stagePadding: 43,
 	            margin: 24,
-	            nav: false
+	            nav: true
 	        },
 	        1024:{
 	            items: 3,
-	            stagePadding: 40,
+	            stagePadding: 43,
 	            margin: 20,
 	            nav: true
 	        },
 	        1440:{
 	            items: 4,
-	            stagePadding: 38,
+	            stagePadding: 43,
 	            margin: 20,
 	            nav: true
 	        }
@@ -49,29 +49,31 @@
 
 	$('.scrollbar-inner').scrollbar();
 
-    // listeners
+  // listeners
 
-    $('.touchable').on('mousedown touchstart', function() {
-		$(this).addClass('pressed');
-	    $(this).on('mouseup touchend', function() {
-			$(this).removeClass('pressed');
-		});
-	});
+  $('.touchable').on('mousedown touchstart', function() {
+    $(this).addClass('pressed');
+    $(this).on('mouseup touchend', function() {
+      $(this).removeClass('pressed');
+    });
+  });
 
 	// nav buttons
 
-	$('nav ul li.nav-link').on('mouseup touchend', function() {
+  function openView(i) {
 
-		var href = $(this).attr('data-href');
+    var href = $(i).attr('data-href');
 
-		$('body').addClass('nav-tapped');
+    $('body').addClass('nav-tapped');
 
-		$('*[data-view-name=' + href + ']').addClass('shown');
+    $('*[data-view-name=' + href + ']').addClass('shown');
 
-		setTimeout(function() {
-			$('body').addClass('header-locked');
-			$('*[data-view-name=' + href + ']').addClass('locked');
-		},500);
+    // refactor the shit below to use timed css keyframe anims
+
+    setTimeout(function() {
+      $('body').addClass('header-locked');
+      $('*[data-view-name=' + href + ']').addClass('locked');
+    },500);
 
     setTimeout(function() {
       $('*[data-view-name=' + href + ']').addClass('back-btn-deployed');
@@ -85,7 +87,18 @@
       $('body.first-use').removeClass('first-use first-use-animations');
     },3500);
 
-	});
+  }
+
+  // detect touch or assume mouse based on first interaction
+
+  window.addEventListener('touchstart', function onFirstTouch() {
+    document.body.classList.add('using-touch');
+    window.removeEventListener('touchstart', onFirstTouch, false);
+  }, false);
+
+  $('nav ul li.nav-link').on('touchend mouseup', function() {
+    openView(this);
+  });
 
 	// back buttons
 

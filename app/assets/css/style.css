@@ -462,9 +462,10 @@ nav {
       background-color: #161616;
       color: rgba(255, 255, 255, 0.75);
       cursor: pointer;
-      transition: background-color 100ms ease; }
+      transition: background-color 500ms ease; }
       nav ul li.pressed {
-        background-color: #091e22; }
+        background-color: #091e22;
+        transition: background-color 25ms ease; }
       nav ul li:nth-child(1) {
         -webkit-transform: translate3d(0, 0, 0);
                 transform: translate3d(0, 0, 0); }
@@ -590,12 +591,13 @@ main {
         overflow: hidden;
         -webkit-transform: translate3d(-46px, 0, 0);
                 transform: translate3d(-46px, 0, 0);
-        transition: background-color 100ms ease, -webkit-transform 500ms ease;
-        transition: transform 500ms ease, background-color 100ms ease;
-        transition: transform 500ms ease, background-color 100ms ease, -webkit-transform 500ms ease;
+        transition: background-color 500ms ease, -webkit-transform 500ms ease;
+        transition: transform 500ms ease, background-color 500ms ease;
+        transition: transform 500ms ease, background-color 500ms ease, -webkit-transform 500ms ease;
         cursor: pointer; }
         main .view h3 .btn.pressed {
-          background-color: #091e22; }
+          background-color: #091e22;
+          transition: background-color 25ms ease; }
         main .view h3 .btn .glyph {
           position: absolute;
           top: 0px;
@@ -670,7 +672,7 @@ main {
       right: auto;
       bottom: 0px;
       left: 0px;
-      width: 100vw;
+      width: 100%;
       transition: opacity 500ms ease;
       opacity: 0; }
     main .view .owl-carousel {
@@ -679,47 +681,44 @@ main {
       main .view .owl-carousel .owl-stage,
       main .view .owl-carousel .owl-item {
         height: 100%; }
-      body.first-use-animations main .view .owl-carousel .owl-stage {
+      body.using-touch.first-use-animations main .view .owl-carousel .owl-stage {
         -webkit-animation: carousel-first-use 2000ms ease;
                 animation: carousel-first-use 2000ms ease; }
-      main .view .owl-carousel .owl-nav {
+      .using-touch main .view .owl-carousel .owl-nav {
         display: none; }
-        .windows main .view .owl-carousel .owl-nav,
-        .no-touch main .view .owl-carousel .owl-nav {
-          display: block; }
-        main .view .owl-carousel .owl-nav .owl-prev,
-        main .view .owl-carousel .owl-nav .owl-next {
-          position: absolute;
-          top: 50%;
-          right: auto;
-          bottom: auto;
-          left: auto;
-          -webkit-transform: translate3d(0, -50%, 0);
-                  transform: translate3d(0, -50%, 0);
-          width: 44px;
-          height: 88px;
-          background-color: #161616;
-          overflow: hidden;
-          text-indent: -999px;
-          background-position: 50% 50%;
-          background-repeat: no-repeat;
-          background-size: 66px;
-          transition: opacity 400ms ease, background-color 100ms ease; }
-          main .view .owl-carousel .owl-nav .owl-prev:hover,
-          main .view .owl-carousel .owl-nav .owl-next:hover {
-            background-color: #091e22; }
-          main .view .owl-carousel .owl-nav .owl-prev:active,
-          main .view .owl-carousel .owl-nav .owl-next:active {
-            background-color: #13414b; }
-        main .view .owl-carousel .owl-nav .owl-prev {
-          background-image: url("../img/arrow-back.svg");
-          left: 0; }
-        main .view .owl-carousel .owl-nav .owl-next {
-          background-image: url("../img/arrow-fwd.svg");
-          right: 0; }
-        main .view .owl-carousel .owl-nav .disabled {
-          opacity: 0;
-          cursor: default; }
+      main .view .owl-carousel .owl-nav .owl-prev,
+      main .view .owl-carousel .owl-nav .owl-next {
+        position: absolute;
+        top: 50%;
+        right: auto;
+        bottom: auto;
+        left: auto;
+        -webkit-transform: translate3d(0, -50%, 0);
+                transform: translate3d(0, -50%, 0);
+        width: 44px;
+        height: 88px;
+        background-color: #13414b;
+        overflow: hidden;
+        text-indent: -999px;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: 66px;
+        transition: opacity 400ms ease, background-color 100ms ease; }
+        main .view .owl-carousel .owl-nav .owl-prev:hover,
+        main .view .owl-carousel .owl-nav .owl-next:hover {
+          background-color: #13414b; }
+        main .view .owl-carousel .owl-nav .owl-prev:active,
+        main .view .owl-carousel .owl-nav .owl-next:active {
+          background-color: #091e22; }
+      main .view .owl-carousel .owl-nav .owl-prev {
+        background-image: url("../img/arrow-back.svg");
+        left: 0; }
+      main .view .owl-carousel .owl-nav .owl-next {
+        background-image: url("../img/arrow-fwd.svg");
+        right: 0; }
+      main .view .owl-carousel .owl-nav .disabled {
+        opacity: 0;
+        cursor: default; }
       main .view .owl-carousel .owl-stage {
         zoom: 0.9; }
       main .view .owl-carousel .slide {
@@ -785,7 +784,7 @@ main {
   margin-left: 24px;
   opacity: 0;
   display: none; }
-  body.first-use-animations #svg-swipe-hand {
+  body.using-touch.first-use-animations #svg-swipe-hand {
     display: block;
     -webkit-animation: swipe-hand-animate-in-out 2000ms ease;
             animation: swipe-hand-animate-in-out 2000ms ease; }
@@ -796,10 +795,10 @@ main {
     -webkit-transform: scaleX(0);
         -ms-transform: scaleX(0);
             transform: scaleX(0); }
-    body.first-use-animations #svg-swipe-hand #swipe {
+    body.using-touch.first-use-animations #svg-swipe-hand #swipe {
       -webkit-animation: swipe-animate-in-out 2000ms ease;
               animation: swipe-animate-in-out 2000ms ease; }
-  body.first-use-animations #svg-swipe-hand #hand {
+  body.using-touch.first-use-animations #svg-swipe-hand #hand {
     -webkit-animation: hand-animate-in-out 2000ms ease;
             animation: hand-animate-in-out 2000ms ease; }
 
