@@ -2,14 +2,14 @@
 
 }
 @media only screen and (min-width:480px) {
-	@import 'partials/_header_mobile_landscape.scss';
-	@import 'partials/_nav_mobile_landscape.scss';
-	@import 'partials/_main_mobile_landscape.scss';
+  @import 'partials/_header_mobile_landscape.scss';
+  @import 'partials/_nav_mobile_landscape.scss';
+  @import 'partials/_main_mobile_landscape.scss';
 }
 @media only screen and (min-width:768px) {
-	@import 'partials/_header_desktop.scss';
-	@import 'partials/_nav_desktop.scss';
-	@import 'partials/_main_desktop.scss';
+  @import 'partials/_header_desktop.scss';
+  @import 'partials/_nav_desktop.scss';
+  @import 'partials/_main_desktop.scss';
 }
 @media only screen and (min-width:1024px) {
   @import 'partials/_main_tablet_landscape.scss';
@@ -17,9 +17,9 @@
 @media only screen and (min-width:1140px) {
 }
 @media only screen and (min-width:1280px) {
-	@import 'partials/_header_hd.scss';
-	@import 'partials/_nav_hd.scss';
-	@import 'partials/_main_hd.scss';
+  @import 'partials/_header_hd.scss';
+  @import 'partials/_nav_hd.scss';
+  @import 'partials/_main_hd.scss';
 }
 @media only screen and (min-width:1440px) {
 }
