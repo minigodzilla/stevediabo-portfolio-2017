@@ -43,8 +43,8 @@
                 nav: true
             },
             1440:{
-                items: 4,
-                stagePadding: 43,
+                items: 3,
+                stagePadding: 51,
                 margin: 20,
                 nav: true
             }

@@ -4,26 +4,26 @@ nav {
 
     li {
       @include position(absolute, 0 0 0 50%);
-      top: calc(30% + 20px);
+      top: calc(30% + 2rem);
       width: 42.5%;
 
       &:nth-child(1) {
         transform: translate3d(4%,0,0);
       }
       &:nth-child(2) {
-        transform: translate3d(4%,46px,0);
+        transform: translate3d(4%,4.6rem,0);
       }
       &:nth-child(3) {
-        transform: translate3d(4%,92px,0);
+        transform: translate3d(4%,9.2rem,0);
       }
       &:nth-child(4) {
-        transform: translate3d(4%,138px,0);
+        transform: translate3d(4%,13.8rem,0);
       }
       &:nth-child(5) {
-        transform: translate3d(4%,184px,0);
+        transform: translate3d(4%,18.4rem,0);
       }
       &:nth-child(6) {
-        transform: translate3d(4%,230px,0);
+        transform: translate3d(4%,23.0rem,0);
       }
     }
   }

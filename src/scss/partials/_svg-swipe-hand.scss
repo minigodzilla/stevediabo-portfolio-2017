@@ -1,11 +1,11 @@
 #svg-swipe-hand {
   position: absolute;
   z-index: 3;
-  width: 100px;
-  height: 160px;
+  width: 10rem;
+  height: 16rem;
   left: 50%;
   top: 50%;
-  margin-left: 24px;
+  margin-left: 2.4rem;
   opacity: 0;
   display: none;
 
@@ -15,7 +15,7 @@
   }
 
   #swipe {
-    transform-origin: 10px 0;
+    transform-origin: 1rem 0;
     transform: scaleX(0);
 
     body.using-touch.first-use-animations & {

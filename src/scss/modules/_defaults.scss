@@ -3,13 +3,15 @@
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
-html {
+html,
+body {
+  font-size: 62.5%; /* Sets up the Base 10 stuff */
 }
 body {
   background-color: $trans-black-darker;
   color: $text-primary;
   font-family: Varela, sans-serif;
-  font-size: 14px;
+  // font-size: 14px;
   font-weight: normal;
   line-height: 1.5;
   overflow: hidden;
@@ -27,7 +29,7 @@ body,html{
     background-color: transparent;
     border: 0;
     overflow: hidden;
-    *text-indent: -9999px;
+    *text-indent: -999.9rem;
 }
 .ir:before {
     content: "";
