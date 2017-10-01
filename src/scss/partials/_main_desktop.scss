@@ -5,5 +5,36 @@ main {
     h3 {
       width: 35%;
     }
+    .owl-carousel {
+
+      .slide {
+
+        .album {
+
+          a {
+            width: 20vw;
+            height: 20vw;
+            margin-right: 0.4vw;
+            margin-bottom: 0.8vw;
+
+            img {
+              opacity: 0.75;
+              transition: all 400ms ease-out;
+            }
+
+            &:nth-of-type(even) {
+              margin-left: 0.4vw;
+            }
+
+            &:hover {
+              img {
+                transform: scale(1.1);
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }

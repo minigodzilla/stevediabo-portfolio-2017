@@ -48,6 +48,28 @@ main {
         }
       }
     }
+
+    .owl-carousel {
+
+      .slide {
+
+        .album {
+          width: 50vw;
+
+          a {
+            width: 20vw;
+            height: 20vw;
+            margin-right: 0.4vw;
+            margin-bottom: 0.8vw;
+
+            &:nth-of-type(even) {
+              margin-left: 0.4vw;
+            }
+          }
+        }
+      }
+    }
+
     .slide-carousel {
 
       .slide {
