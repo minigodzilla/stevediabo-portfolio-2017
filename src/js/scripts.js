@@ -74,7 +74,7 @@
 
       $('*[data-view-name=' + href + ']').addClass('shown');
 
-      // refactor the shit below to use timed css keyframe anims
+      // TODO: refactor the shit below to use timed css keyframe anims
 
       setTimeout(function() {
         $('body').addClass('header-locked');
